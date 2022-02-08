@@ -1,24 +1,7 @@
 <template>
   <div id="app">
     <Header/>
-    <div>
-    Content placed here
-    </div><div>
-    Content placed here
-    </div><div>
-    Content placed here
-    </div><div>
-    Content placed here
-    </div><div>
-    Content placed here
-    </div><div>
-    Content placed here
-    </div><div>
-    Content placed here
-    </div>
-    <div>
-      Content placed here
-    </div>
+    <Content/>
     <Footer/>
   </div>
 </template>
@@ -26,10 +9,12 @@
 <script>
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
+import Content from "@/components/Content/Content";
 
 export default {
   name: 'App',
   components: {
+    Content,
     Footer,
     Header
   }
