@@ -2,7 +2,6 @@
   <div class="Header">
     <LogoImage/>
     <Menu/>
-<!--    <ChangeLanguage/>-->
   </div>
 </template>
 
@@ -11,11 +10,10 @@
 
 import LogoImage from "@/components/Header/components/LogoImage";
 import Menu from "@/components/Header/components/Menu";
-// import ChangeLanguage from "@/components/Header/components/ChangeLanguage";
 
 export default {
   name: "Header",
-  components: {Menu, LogoImage, /*ChangeLanguage*/},
+  components: {Menu, LogoImage},
 }
 </script>
 

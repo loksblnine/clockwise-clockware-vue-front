@@ -29,24 +29,26 @@ export default {
 
 .image3x {
   position: absolute;
-  right: 0;
-  top: 280px;
+  left: 0;
+  bottom: 0;
   z-index: -100;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 @media screen and (max-width: 900px) {
   .image1x {
     display: none;
   }
-
   .image2x {
     display: flex;
     position: absolute;
-    right: 0;
-    top: 280px;
+    left: 0;
+    bottom: -480px;
     z-index: -100;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
-
   .image3x {
     display: none;
   }
@@ -56,9 +58,11 @@ export default {
   .image1x {
     display: flex;
     position: absolute;
-    right: 0;
-    top: 280px;
+    left: 0;
+    bottom: 480px;
     z-index: -100;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 
   .image2x {
