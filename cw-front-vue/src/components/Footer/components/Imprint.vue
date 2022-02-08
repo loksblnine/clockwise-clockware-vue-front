@@ -30,7 +30,7 @@ export default {
 
 @media screen and (min-width: 150px) and (max-width: 300px) {
   .Im {
-    margin: 42px 0 42px 0;
+    margin: 34px 0 42px 0;
     width: 150px;
     height: 20px;
     font-family: OpenSans, serif;
@@ -48,7 +48,7 @@ export default {
 
 @media screen and (max-width: 150px) {
   .Im {
-    margin: 37px 0 42px 0;
+    margin: 30px 0 42px 0;
     width: 75px;
     height: 20px;
     font-family: OpenSans, serif;

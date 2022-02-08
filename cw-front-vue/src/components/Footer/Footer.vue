@@ -23,15 +23,21 @@ export default {
 </script>
 
 <style scoped>
+.Footer {
+  display: flex;
+  left: 0;
+  position: relative;
+  height: 104px;
+  bottom: -104px;
+  background: #1e1e1e;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 300px) {
   .Footer {
-    display: flex;
-    left: 0;
-    position: relative;
-    height: 104px;
-    bottom: -104px;
-    background: #1e1e1e;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
+    height: 80px;
   }
+}
 </style>

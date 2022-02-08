@@ -27,14 +27,14 @@ export default {
 }
 @media screen and (min-width: 150px) and (max-width: 300px) {
   .LogoText {
-    margin: 35px 0 42px 0;
+    margin: 20px 0 42px 0;
     display: flex;
   }
 }
 @media screen and (max-width: 150px) {
   .LogoText {
     display: flex;
-    margin-top: 30px;
+    margin-top: 24px;
   }
 }
 </style>
