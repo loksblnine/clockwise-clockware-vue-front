@@ -28,7 +28,6 @@ export default {
   background: white;
   color: #1e1e1e;
   height: 144px;
-  padding: 1em;
 }
 @media screen {
   .Header {
@@ -39,7 +38,6 @@ export default {
     background: white;
     color: #1e1e1e;
     height: 144px;
-    padding: 1em;
   }
 }
 </style>
