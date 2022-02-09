@@ -78,6 +78,14 @@ export default {
         {
           header: "Inefficient truck load",
           text: "Without dynamic truck load scheduling, your company misses up to 50% of the potential loading capability"
+        },
+        {
+          header: "2Manual order management based on phone calls and emails",
+          text: "Do your clients call you just to find out that the necessary product is currently out of stock? You waste resources by not providing them with actual information about your available inventory online"
+        },
+        {
+          header: "2Inefficient truck load",
+          text: "Without dynamic truck load scheduling, your company misses up to 50% of the potential loading capability"
         }
       ]
     }
@@ -86,23 +94,23 @@ export default {
     renderElems() {
       return this.items.filter((item, index) => {
         console.log()
-        return index < (this.$vssWidth / 500).toFixed(0)
+        return index - this.currentIndex < (this.$vssWidth / 500).toFixed(0)
       })
-    },
-    moveLeft() {
-      if (this.currentIndex === 0) {
-        this.currentIndex = this.items.length - 1
-      } else {
-        this.currentIndex--
-      }
-      const shifted = this.items.shift()
-      this.items.push(shifted)
     },
     moveRight() {
       if (this.currentIndex === this.items.length - 1) {
         this.currentIndex = 0
       } else {
         this.currentIndex++
+      }
+      const shifted = this.items.shift()
+      this.items.push(shifted)
+    },
+    moveLeft() {
+      if (this.currentIndex === 0) {
+        this.currentIndex = this.items.length - 1
+      } else {
+        this.currentIndex--
       }
       this.items.reverse()
       const shifted = this.items.shift()
@@ -122,6 +130,7 @@ export default {
   border-radius: 50%;
   display: inline-block;
 }
+
 .activeDot {
   height: 15px;
   margin-left: 25px;
