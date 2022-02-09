@@ -5,6 +5,7 @@
     <ArrowContentBottom/>
     <Management/>
     <!--    <decorativeRoutesThingBottom/>-->
+    <Issue/>
   </div>
 </template>
 
@@ -14,10 +15,12 @@ import decorativeRoutesThingMiddle from "@/components/Content/components/decorat
 // import decorativeRoutesThingBottom from "@/components/Content/components/decorativeRoutesThingBottom";
 import Management from "@/components/Content/components/Managment/Managment";
 import ArrowContentBottom from "@/components/Content/components/arrowContentBottom";
+import Issue from "./components/Issues/Issue";
 
 export default {
   name: "Content",
   components: {
+    Issue,
     ArrowContentBottom,
     Management,
     decorativeRoutesThingTop,

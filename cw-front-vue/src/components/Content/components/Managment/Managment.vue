@@ -20,7 +20,9 @@ export default {
 <style scoped>
 .Management {
   display: table;
+  position: relative;
   margin-left: 250px;
+  z-index: -50;
 }
 
 .Management > h3 {
@@ -30,7 +32,7 @@ export default {
   margin: 48px 63px 49px 45px;
   font-family: Catamaran;
   font-size: 55px;
-  font-weight: 900;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
@@ -67,7 +69,7 @@ export default {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
+    line-height: 1;
     letter-spacing: -0.38px;
   }
 

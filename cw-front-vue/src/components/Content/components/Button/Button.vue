@@ -15,10 +15,12 @@ export default {
 
 <style scoped>
 .Button {
-  text-align: left;
+  height: 80px;
+  min-width: 300px;
+  text-align: center;
   font-family: Catamaran, Catamaran, serif;
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -27,17 +29,19 @@ export default {
   background-color: rgba(8, 61, 119);
   color: white;
 }
-.Button > span { margin: 35px}
+.Button > span { margin: 55px}
 
 @media screen and (max-width: 900px) {
   .Button {
     font-size: 20px;
+    height: 64px;
   }
   .Button > span { margin: 35px}
 }
 @media screen and (max-width: 500px) {
   .Button {
     font-size: 13px;
+    height: 42px;
   }
   .Button > span { margin: 35px}
 }

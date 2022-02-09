@@ -115,7 +115,7 @@ export default {
   .menu {
     position: absolute;
     top: 0;
-    margin-top: 170px;
+    margin-top: 130px;
     left: 0;
     flex-direction: column;
     width: 100%;
