@@ -1,19 +1,26 @@
 <template>
   <div class="Issue">
     <h3>Have you experienced any of these issues?</h3>
+    <Carousel/>
   </div>
 </template>
 
 <script>
+import Carousel from "@/components/Content/components/Issues/Carousel";
+
 export default {
-  name: "Issue"
+  name: "Issue",
+  components: {
+    Carousel
+  }
 }
 </script>
 
 <style scoped>
 .Issue {
-  margin: 168px 253px 168px 28px;
+  margin: 168px 0px 168px 28px;
 }
+
 .Issue > h3 {
   width: 903px;
   height: 35px;
@@ -28,7 +35,7 @@ export default {
   color: #1e1e1e;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1010px) {
   .Issue {
     margin-left: 100px;
     margin-top: 100px;
@@ -46,17 +53,20 @@ export default {
     letter-spacing: -0.38px;
   }
 }
+
 @media screen and (max-width: 500px) {
   .Issue {
-    margin-left: 10px;
-    margin-top: 50px;
+    margin: 0;
+    align-items: center;
   }
 
   .Issue > h3 {
+    text-align: center;
+    margin-left: 20px;
     margin-bottom: 0;
-    width: 350px;
-    height: 80px;
-    font-size: 15px;
+    width: 300px;
+    height: 40px;
+    font-size: 17px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

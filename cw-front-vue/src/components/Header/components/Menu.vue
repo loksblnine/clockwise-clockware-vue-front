@@ -118,7 +118,7 @@ export default {
     margin-top: 130px;
     left: 0;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     justify-content: center;
   }
 
@@ -164,6 +164,7 @@ export default {
 @media (max-width: 300px) {
   .menu > * {
     font-size: 15px;
+    width: 80%;
   }
 }
 

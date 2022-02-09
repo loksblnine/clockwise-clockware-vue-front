@@ -40,4 +40,9 @@ export default {
   src: local("OpenSans"),
   url(./fonts/OpenSans-Regular.ttf) format("truetype");
 }
+@font-face {
+  font-family: "Catamaran-Black";
+  src: local("OpenSans"),
+  url(./fonts/Catamaran-Black.ttf) format("truetype");
+}
 </style>

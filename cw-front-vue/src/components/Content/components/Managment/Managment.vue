@@ -30,9 +30,9 @@ export default {
   width: 710px;
   height: 110px;
   margin: 48px 63px 49px 45px;
-  font-family: Catamaran;
+  font-family: Catamaran-Black;
   font-size: 55px;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
@@ -56,14 +56,14 @@ export default {
   color: #1a1d1a;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1010px) {
   .Management {
     margin-left: 150px;
   }
 
   .Management > h3 {
     margin-bottom: 0;
-    width: 260px;
+    width: 275px;
     height: 80px;
     font-size: 21px;
     font-weight: normal;
@@ -87,14 +87,14 @@ export default {
 
 @media screen and (max-width: 500px) {
   .Management {
-    margin-left: 50px;
+    margin-left: 0px;
   }
 
   .Management > h3 {
     margin-bottom: 0;
-    width: 180px;
+    width: auto;
     height: 56px;
-    font-size: 13px;
+    font-size: 17px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -104,9 +104,9 @@ export default {
 
   .Management > p {
     margin-top: 0;
-    width: 180px;
+    width: auto;
     height: auto;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;

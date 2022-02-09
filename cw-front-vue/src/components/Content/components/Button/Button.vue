@@ -26,12 +26,12 @@ export default {
   line-height: normal;
   object-fit: contain;
   border-radius: 72px;
-  background-color: rgba(8, 61, 119);
+  background-color: rgba(8, 61, 119, 1);
   color: white;
 }
 .Button > span { margin: 55px}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1010px) {
   .Button {
     font-size: 20px;
     height: 64px;
