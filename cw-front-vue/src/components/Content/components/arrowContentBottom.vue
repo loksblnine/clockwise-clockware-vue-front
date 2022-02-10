@@ -32,7 +32,7 @@ export default {
 
 .image3x {
   position: fixed;
-  left: 5%;
+  left: 2vw;
   top: 50%;
   z-index: -80;
   display: table;
@@ -50,7 +50,7 @@ export default {
 
   .image2x {
     position: fixed;
-    left: 20px;
+    left: 1vw;
     top: 50%;
     z-index: -80;
     display: table;
@@ -68,17 +68,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   .image1x {
-    display: table;
-    position: fixed;
-    left: 2%;
-    top: 50%;
-    z-index: -80;
-  }
-
-  .image1x > p {
-    transform: rotate(-90deg);
-    margin-bottom: 35px;
-    font-size: 6px;
+    display: none;
   }
 
   .image2x {

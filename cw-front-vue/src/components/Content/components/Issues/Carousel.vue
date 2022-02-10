@@ -10,9 +10,9 @@
     </div>
     <div class="Buttons">
       <div class="Left" v-on:click="moveLeft">
-        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="87" viewBox="0 0 84 87">
+        <svg height="87" viewBox="0 0 84 87" width="84" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <filter id="a" width="150%" height="150%" x="-25%" y="-25%" filterUnits="objectBoundingBox">
+            <filter id="a" filterUnits="objectBoundingBox" height="150%" width="150%" x="-25%" y="-25%">
               <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
             </filter>
             <linearGradient id="b" x1="100%" x2="0%" y1="100%" y2="0%">
@@ -21,18 +21,19 @@
             </linearGradient>
           </defs>
           <g fill="none" fill-rule="evenodd">
-            <path fill="#D05826" fill-opacity=".5" d="M5 15h60v60H5z" filter="url(#a)" transform="translate(7)"/>
-            <path fill="url(#b)" d="M0 0h70v70H0z" transform="translate(7)"/>
+            <path d="M5 15h60v60H5z" fill="#D05826" fill-opacity=".5" filter="url(#a)" transform="translate(7)"/>
+            <path d="M0 0h70v70H0z" fill="url(#b)" transform="translate(7)"/>
             <path d="M30 47h24V23H30z"/>
-            <path fill="#1E1E1E"
-                  d="M41.365 32.61l1.584-1.542c.956-.93.956-2.44 0-3.37a2.496 2.496 0 0 0-3.462 0l-5.77 5.617a2.339 2.339 0 0 0 0 3.37l5.77 5.617c.956.93 2.506.93 3.462 0 .956-.93.956-2.44 0-3.37l-1.584-1.542h7.245a2.39 2.39 0 0 0 0-4.78h-7.245z"/>
+            <path
+                d="M41.365 32.61l1.584-1.542c.956-.93.956-2.44 0-3.37a2.496 2.496 0 0 0-3.462 0l-5.77 5.617a2.339 2.339 0 0 0 0 3.37l5.77 5.617c.956.93 2.506.93 3.462 0 .956-.93.956-2.44 0-3.37l-1.584-1.542h7.245a2.39 2.39 0 0 0 0-4.78h-7.245z"
+                fill="#1E1E1E"/>
           </g>
         </svg>
       </div>
       <div class="Right" v-on:click="moveRight">
-        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="87" viewBox="0 0 84 87">
+        <svg height="87" viewBox="0 0 84 87" width="84" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <filter id="a" width="150%" height="150%" x="-25%" y="-25%" filterUnits="objectBoundingBox">
+            <filter id="a" filterUnits="objectBoundingBox" height="150%" width="150%" x="-25%" y="-25%">
               <feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
             </filter>
             <linearGradient id="b" x1="100%" x2="0%" y1="100%" y2="0%">
@@ -41,17 +42,18 @@
             </linearGradient>
           </defs>
           <g fill="none" fill-rule="evenodd">
-            <path fill="#D05826" fill-opacity=".5" d="M5 15h60v60H5z" filter="url(#a)" transform="translate(7)"/>
-            <path fill="url(#b)" d="M0 0h70v70H0z" transform="translate(7)"/>
+            <path d="M5 15h60v60H5z" fill="#D05826" fill-opacity=".5" filter="url(#a)" transform="translate(7)"/>
+            <path d="M0 0h70v70H0z" fill="url(#b)" transform="translate(7)"/>
             <path d="M54 47H30V23h24z"/>
-            <path fill="#1E1E1E"
-                  d="M42.635 32.61l-1.584-1.542a2.339 2.339 0 0 1 0-3.37 2.496 2.496 0 0 1 3.462 0l5.77 5.617c.956.93.956 2.44 0 3.37l-5.77 5.617c-.956.93-2.506.93-3.462 0a2.339 2.339 0 0 1 0-3.37l1.584-1.542H35.39a2.39 2.39 0 0 1 0-4.78h7.245z"/>
+            <path
+                d="M42.635 32.61l-1.584-1.542a2.339 2.339 0 0 1 0-3.37 2.496 2.496 0 0 1 3.462 0l5.77 5.617c.956.93.956 2.44 0 3.37l-5.77 5.617c-.956.93-2.506.93-3.462 0a2.339 2.339 0 0 1 0-3.37l1.584-1.542H35.39a2.39 2.39 0 0 1 0-4.78h7.245z"
+                fill="#1E1E1E"/>
           </g>
         </svg>
       </div>
-      <div class="Dots" v-for="n in items.length" :key="n">
-        <span class="dot" v-if="currentIndex!==n-1"></span>
-        <span class="activeDot" v-if="currentIndex===n-1"></span>
+      <div v-for="n in items.length" :key="n" class="Dots">
+        <span v-if="currentIndex!==n-1" class="dot"></span>
+        <span v-if="currentIndex===n-1" class="activeDot"></span>
       </div>
     </div>
   </div>
@@ -93,8 +95,7 @@ export default {
   methods: {
     renderElems() {
       return this.items.filter((item, index) => {
-        console.log()
-        return index - this.currentIndex < (this.$vssWidth / 500).toFixed(0)
+        return index < (this.$vssWidth / 500).toFixed(0)
       })
     },
     moveRight() {
@@ -167,9 +168,6 @@ export default {
   margin-left: 252px;
 }
 
-.Carousel:last-child {
-  overflow: hidden;
-}
 
 .Rectangle {
   width: 420px;
@@ -180,6 +178,10 @@ export default {
   object-fit: contain;
   box-shadow: 0 10px 30px 0 rgba(8, 61, 119, 0.25);
   background-color: rgba(8, 61, 119, 1);
+}
+
+.Carousel > div:last-child {
+  overflow: hidden;
 }
 
 .Rectangle > h3 {
@@ -222,10 +224,6 @@ export default {
     margin-left: 112px;
   }
 
-  .Carousel:last-child {
-    overflow: hidden;
-  }
-
   .Rectangle {
     margin-top: 20px;
     width: 280px;
@@ -253,6 +251,18 @@ export default {
 }
 
 @media screen and (max-width: 500px) {
+  .dot {
+    height: 10px;
+    margin-left: 15px;
+    width: 10px;
+  }
+
+  .activeDot {
+    height: 10px;
+    margin-left: 15px;
+    width: 10px;
+  }
+
   .Carousel {
     margin-left: 12px;
   }
@@ -262,18 +272,16 @@ export default {
     margin-left: 12px;
   }
 
-  .Carousel:last-child {
-    overflow: hidden;
-  }
 
   .Rectangle {
+    position: relative;
     margin-top: 20px;
     width: 240px;
     height: auto;
     max-height: 290px;
     padding: 67px 37px 118px 38px;
-    overflow: hidden;
   }
+
 
   .Rectangle > h3 {
     width: 245px;

@@ -87,19 +87,19 @@ export default {
 
 @media screen and (max-width: 500px) {
   .Management {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .Management > h3 {
     margin-bottom: 0;
-    width: auto;
+    width: 215px;
     height: 56px;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
-    letter-spacing: 0.38px;
+    letter-spacing: 0px;
   }
 
   .Management > p {
