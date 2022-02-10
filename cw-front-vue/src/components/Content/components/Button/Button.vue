@@ -18,9 +18,9 @@ export default {
   height: 80px;
   min-width: 300px;
   text-align: center;
-  font-family: Catamaran, Catamaran, serif;
+  font-family: Catamaran;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
