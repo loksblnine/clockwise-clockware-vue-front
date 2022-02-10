@@ -56,7 +56,7 @@ export default {
   color: #1a1d1a;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1025px) {
   .Management {
     margin-left: 150px;
   }

@@ -6,7 +6,7 @@
     <Management/>
 <!--    <decorativeRoutesThingBottom/>-->
     <Issue/>
-    <groupDecorCircles/>
+    <Benefit/>
   </div>
 </template>
 
@@ -17,12 +17,14 @@ import decorativeRoutesThingMiddle from "@/components/Content/components/decorat
 import Management from "@/components/Content/components/Managment/Managment";
 import ArrowContentBottom from "@/components/Content/components/arrowContentBottom";
 import Issue from "./components/Issues/Issue";
-import groupDecorCircles from "@/components/Content/components/groupDecorCircles";
+import Benefit from "@/components/Content/components/Benefit/Benefit";
+// import groupDecorCircles from "@/components/Content/components/Benefit/groupDecorCircles";
 
 export default {
   name: "Content",
   components: {
-    groupDecorCircles,
+    Benefit,
+    // groupDecorCircles,
     Issue,
     ArrowContentBottom,
     Management,

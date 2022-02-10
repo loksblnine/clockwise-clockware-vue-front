@@ -36,7 +36,7 @@ export default {
   transform: scaleX(-1);
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1025px) {
   .image1x {
     display: none;
   }

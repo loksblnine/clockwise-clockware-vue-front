@@ -214,7 +214,7 @@ export default {
   color: white;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1025px) {
   .Carousel {
     margin-left: 112px;
   }

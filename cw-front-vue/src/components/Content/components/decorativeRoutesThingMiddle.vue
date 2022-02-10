@@ -34,7 +34,7 @@ export default {
   z-index: -100;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1025px) {
   .image1x {
     display: none;
   }

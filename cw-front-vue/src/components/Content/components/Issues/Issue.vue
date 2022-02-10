@@ -77,7 +77,7 @@ export default {
   color: #1a1d1a;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1025px) {
   .Issue {
     margin-left: 100px;
     margin-top: 100px;

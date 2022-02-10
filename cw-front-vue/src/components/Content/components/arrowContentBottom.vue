@@ -43,7 +43,7 @@ export default {
   margin-bottom: 100px;
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1025px) {
   .image1x {
     display: none;
   }
