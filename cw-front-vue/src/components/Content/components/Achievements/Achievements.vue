@@ -4,16 +4,22 @@
       WITH CUSTOM TRANSPORT MANAGEMENT<br>
       SOFTWARE
     </h1>
+    <Carousel/>
   </div>
 </template>
 
 <script>
+import Carousel from "@/components/Content/components/Achievements/Carousel";
 export default {
-  name: "Achievements"
+  name: "Achievements",
+  components: {Carousel}
 }
 </script>
 
 <style scoped>
+.Achievements{
+  margin-top: 100px;
+}
 .Achievements > h1 {
   font-family: Catamaran-Black;
   margin-right: 253px;
@@ -29,7 +35,7 @@ export default {
 
 @media screen and (max-width: 1025px) {
   .Achievements > h1 {
-    margin-right: 153px;
+    margin-right: 100px;
   }
 }
 

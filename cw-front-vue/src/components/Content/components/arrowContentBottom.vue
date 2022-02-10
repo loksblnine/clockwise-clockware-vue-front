@@ -50,7 +50,7 @@ export default {
 
   .image2x {
     position: fixed;
-    left: 1vw;
+    left: -50px;
     top: 50%;
     z-index: -80;
     display: table;
