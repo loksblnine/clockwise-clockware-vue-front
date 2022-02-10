@@ -28,13 +28,14 @@ export default {
 }
 
 @media screen and (max-width: 1025px) {
-
+  .Achievements > h1 {
+    margin-right: 153px;
+  }
 }
 
 @media screen and (max-width: 500px) {
   .Achievements > h1 {
-    margin-left: -80px;
-    text-align: left;
+    margin-right: 20px;
     font-size: 20px;
     width: auto;
   }

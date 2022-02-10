@@ -18,9 +18,3 @@ export default {
 
 }
 </script>
-
-<style scoped>
-  .Benefit{
-    margin-bottom: 5vh;
-  }
-</style>

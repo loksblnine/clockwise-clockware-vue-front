@@ -35,6 +35,7 @@ export default {
 @media screen and (max-width: 1025px) {
   .Button {
     font-size: 20px;
+    min-width: 360px;
     height: 64px;
   }
   .Button > span { margin: 35px}
@@ -43,6 +44,7 @@ export default {
   .Button {
     font-size: 13px;
     height: 42px;
+    min-width: 240px;
   }
   .Button > span { margin: 35px}
 }
