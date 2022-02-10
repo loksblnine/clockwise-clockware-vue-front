@@ -30,7 +30,7 @@ export default {
 .image3x {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 200px;
   z-index: -100;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
@@ -44,7 +44,8 @@ export default {
     display: flex;
     position: absolute;
     left: 0;
-    bottom: -480px;
+    opacity: 0.5;
+    bottom: 200px;
     z-index: -100;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -56,6 +57,7 @@ export default {
 
 @media screen and (max-width: 500px) {
   .image1x {
+    opacity: 0.5;
     display: flex;
     position: absolute;
     left: 0;

@@ -2,18 +2,21 @@
   <div class="Footer">
     <Imprint/>
     <LogoText/>
+    <decorativeRoutesThingBottom/>
   </div>
 </template>
 
 <script>
 import Imprint from "@/components/Footer/components/Imprint";
 import LogoText from "@/components/Footer/components/Logo+Text/LogoText";
+import decorativeRoutesThingBottom from "@/components/Footer/decorativeRoutesThingBottom";
 
 export default {
   name: "Footer",
   components: {
     LogoText,
-    Imprint
+    Imprint,
+    decorativeRoutesThingBottom
   },
 
   props: {
