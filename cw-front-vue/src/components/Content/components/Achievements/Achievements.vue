@@ -10,6 +10,7 @@
 
 <script>
 import Carousel from "@/components/Content/components/Achievements/Carousel";
+
 export default {
   name: "Achievements",
   components: {Carousel}
@@ -17,9 +18,10 @@ export default {
 </script>
 
 <style scoped>
-.Achievements{
+.Achievements {
   margin-top: 100px;
 }
+
 .Achievements > h1 {
   font-family: Catamaran-Black;
   margin-right: 253px;

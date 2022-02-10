@@ -72,6 +72,8 @@
 import VueScreenSize from 'vue-screen-size'
 
 const image_1 = require('../../assets/carousel-image-1.png');
+const image_2 = require('../../assets/carousel-image-2.png');
+const image_3 = require('../../assets/carousel-image-3.png');
 
 export default {
   name: "Carousel",
@@ -84,13 +86,39 @@ export default {
           photo: image_1,
           photoDescription: "double truck day load capacity increase ",
           header: "ERP system for construction materials factory",
-          text: "Custom logistics software includes several modules that enabled to \n fully digitalize a factory \n" +
+          text: "Custom logistics software includes several modules that enabled to fully digitalize a factory" +
               "– Order and stock management optimization\n" +
               "– Automatic invoicing and accounting\n" +
               "– Delivery scheduling and route planning\n" +
               "– Automatic contractors selection\n" +
               "\n" +
-              "Eliminating manual work enabled the factory to double truck day load capacity (an \n increase from " +
+              "Eliminating manual work enabled the factory to double truck day load capacity (an increase from " +
+              "45 to 92 trucks per day) and save over 60.000 EUR in the first year. "
+        },
+        {
+          photo: image_2,
+          photoDescription: "2double truck day load capacity increase ",
+          header: "2ERP system for construction materials factory",
+          text: "2Custom logistics software includes several modules that enabled to fully digitalize a factory" +
+              "– Order and stock management optimization\n" +
+              "– Automatic invoicing and accounting\n" +
+              "– Delivery scheduling and route planning\n" +
+              "– Automatic contractors selection\n" +
+              "\n" +
+              "Eliminating manual work enabled the factory to double truck day load capacity (an increase from " +
+              "45 to 92 trucks per day) and save over 60.000 EUR in the first year. "
+        },
+        {
+          photo: image_3,
+          photoDescription: "3double truck day load capacity increase ",
+          header: "3ERP system for construction materials factory",
+          text: "3Custom logistics software includes several modules that enabled to fully digitalize a factory" +
+              "– Order and stock management optimization\n" +
+              "– Automatic invoicing and accounting\n" +
+              "– Delivery scheduling and route planning\n" +
+              "– Automatic contractors selection\n" +
+              "\n" +
+              "Eliminating manual work enabled the factory to double truck day load capacity (an increase from " +
               "45 to 92 trucks per day) and save over 60.000 EUR in the first year. "
         }
       ]
@@ -99,7 +127,7 @@ export default {
   methods: {
     renderElems() {
       return this.items.filter((item, index) => {
-        return index < (this.$vssWidth / 500).toFixed(0)
+        return index < 1
       })
     },
     moveRight() {
@@ -150,12 +178,12 @@ export default {
 }
 
 .Left {
-  margin-right: 50px;
+  margin-right: 25px;
   opacity: 0.5;
 }
 
 .Right {
-  margin-left: 75px;
+  margin-left: 50px;
   opacity: 0.5;
 }
 
@@ -202,10 +230,15 @@ export default {
   color: #1e1e1e;
 }
 
+.TextField {
+ margin-left: 80px
+}
+
 .TextField > h3 {
   text-align: left;
-  width: 345px;
+  white-space: pre-wrap;
   height: 60px;
+  width: auto;
   margin: 0 0 10px;
   font-family: Catamaran-Black;
   font-size: 25px;
@@ -218,6 +251,7 @@ export default {
 }
 
 .TextField > pre {
+  white-space: pre-wrap;
   text-align: left;
   width: 345px;
   height: 276px;
@@ -239,13 +273,14 @@ export default {
     margin-top: 20px;
     margin-left: 112px;
   }
-
+  .TextField {
+    margin-left: 0px
+  }
   .Carousel {
     margin-left: 112px;
   }
 
   .ImageHeader {
-    text-transform: uppercase;
     width: 345px;
     height: 20px;
     margin: 1px 0 50px 16px;
@@ -265,7 +300,6 @@ export default {
     height: 276px;
     font-size: 17px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
@@ -275,6 +309,9 @@ export default {
     width: 10px;
   }
 
+  .TextField {
+    margin-left: 0
+  }
   .activeDot {
     height: 10px;
     margin-left: 15px;
@@ -290,6 +327,38 @@ export default {
     margin-left: 12px;
   }
 
+  .Image {
+    transform: scale(0.6);
+    margin-top: -150px;
 
+  }
+
+  .ImageField {
+    max-width: 300px;
+  }
+
+  .ImageHeader {
+    font-size: 13px;
+    margin-top: -100px;
+  }
+
+  .TextField {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .TextField > h3 {
+    text-align: center;
+    font-size: 17px;
+  }
+
+  .TextField > pre {
+    margin-top: -20px;
+    width: auto;
+    height: 276px;
+    font-size: 14px;
+  }
 }
 </style>
