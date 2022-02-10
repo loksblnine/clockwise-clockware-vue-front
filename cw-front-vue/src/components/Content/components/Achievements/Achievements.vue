@@ -1,9 +1,9 @@
 <template>
   <div class="Achievements">
-    <h3> WHAT OUR PARTNERS HAVE ACHIEVED <br>
+    <h1>WHAT OUR PARTNERS HAVE ACHIEVED <br>
       WITH CUSTOM TRANSPORT MANAGEMENT<br>
       SOFTWARE
-    </h3>
+    </h1>
   </div>
 </template>
 
@@ -14,5 +14,29 @@ export default {
 </script>
 
 <style scoped>
+.Achievements > h1 {
+  font-family: Catamaran-Black;
+  margin-right: 253px;
+  font-size: 35px;
+  font-weight: 900;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -0.88px;
+  text-align: right;
+  color: #1e1e1e;
+}
 
+@media screen and (max-width: 1025px) {
+
+}
+
+@media screen and (max-width: 500px) {
+  .Achievements > h1 {
+    margin-left: -80px;
+    text-align: left;
+    font-size: 20px;
+    width: auto;
+  }
+}
 </style>

@@ -16,7 +16,7 @@ export default {
 <style scoped>
 .Button {
   height: 80px;
-  min-width: 300px;
+  min-width: 560px;
   text-align: center;
   font-family: Catamaran;
   font-size: 28px;
