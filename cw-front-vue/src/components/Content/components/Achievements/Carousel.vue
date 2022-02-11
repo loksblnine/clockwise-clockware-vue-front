@@ -220,7 +220,7 @@ export default {
   width: 345px;
   height: 20px;
   margin: 1px 0 172px 16px;
-  font-family: OpenSans;
+  font-family: Catamaran;
   font-size: 15px;
   font-weight: bold;
   font-stretch: normal;

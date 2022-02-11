@@ -53,7 +53,7 @@ export default {
 .TextField > p {
   width: 345px;
   height: 100px;
-  margin: 5px 0 0;
+  margin: 100px 0 100px;
   opacity: 0.75;
   font-family: OpenSans;
   font-size: 25px;
@@ -74,7 +74,7 @@ export default {
   line-height: 1.2;
   width: 346px;
   height: 100px;
-  margin: 0 0 5px;
+  margin: 100px 0 100px;
   color: #1a1d1a;
 }
 
@@ -83,7 +83,8 @@ export default {
     margin-left: 100px;
     margin-top: 100px;
   }
-  .Issue >div{
+
+  .Issue > div {
     margin-left: -100px;
   }
 
@@ -132,9 +133,11 @@ export default {
     margin: 0;
     align-items: center;
   }
-  .Issue >div{
+
+  .Issue > div {
     margin-left: 0px;
   }
+
   .Issue > h3 {
     text-align: center;
     margin-left: 10px;

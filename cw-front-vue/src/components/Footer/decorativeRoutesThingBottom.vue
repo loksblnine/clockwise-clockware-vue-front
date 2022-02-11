@@ -23,9 +23,10 @@ export default {
 .image3x {
   position: absolute;
   left: 0;
-  opacity: 0.8;
+  background: white;
+  opacity: 1;
   bottom: 200px;
-  z-index: -100;
+  z-index: -10;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -34,10 +35,11 @@ export default {
   .image2x {
     display: flex;
     position: absolute;
+    background: white;
     left: 0;
-    opacity: 0.5;
+    opacity: 1;
     bottom: 200px;
-    z-index: -100;
+    z-index: -10;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
   }

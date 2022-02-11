@@ -34,7 +34,7 @@ export default {
   position: fixed;
   left: 2vw;
   top: 50%;
-  z-index: -80;
+  z-index: -800;
   display: table;
 }
 

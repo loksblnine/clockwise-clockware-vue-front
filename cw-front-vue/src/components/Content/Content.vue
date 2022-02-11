@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Content">
     <decorativeRoutesThingTop/>
     <decorativeRoutesThingMiddle/>
     <ArrowContentBottom/>
@@ -41,5 +41,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .Content{
+    height: auto
+  }
 </style>
