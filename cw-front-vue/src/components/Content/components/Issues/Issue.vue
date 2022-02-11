@@ -2,7 +2,7 @@
   <div class="Issue">
     <h3>Have you experienced any of these issues?</h3>
     <Carousel/>
-    <div class="TextField" style="margin-top: 100px;">
+    <div class="TextField">
       <p>
         Expenses reduction after implementing logistics management software!
       </p>
@@ -83,6 +83,9 @@ export default {
     margin-left: 100px;
     margin-top: 100px;
   }
+  .Issue >div{
+    margin-left: -100px;
+  }
 
   .Issue > h3 {
     margin-bottom: 0;
@@ -98,10 +101,10 @@ export default {
   }
 
   .TextField {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-top: 80px;
   }
 
   .TextField > p {
@@ -129,7 +132,9 @@ export default {
     margin: 0;
     align-items: center;
   }
-
+  .Issue >div{
+    margin-left: 0px;
+  }
   .Issue > h3 {
     text-align: center;
     margin-left: 10px;
@@ -145,10 +150,10 @@ export default {
   }
 
   .TextField {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
     justify-items: center;
+    margin-top: 20px;
   }
 
   .TextField > p {

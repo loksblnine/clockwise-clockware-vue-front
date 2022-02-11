@@ -37,7 +37,7 @@ export default {
 
 @media screen and (max-width: 1025px) {
   .Achievements > h1 {
-    margin-right: 100px;
+    margin: 0 50px;
   }
 }
 

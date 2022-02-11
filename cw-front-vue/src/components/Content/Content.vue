@@ -6,6 +6,7 @@
     <Management/>
     <Issue/>
     <Benefit/>
+    <OurAdvantages/>
     <Achievements/>
     <YourCase/>
   </div>
@@ -20,10 +21,12 @@ import Issue from "./components/Issues/Issue";
 import Benefit from "@/components/Content/components/Benefit/Benefit";
 import YourCase from "@/components/Content/components/YourCase/YourCase";
 import Achievements from "@/components/Content/components/Achievements/Achievements";
+import OurAdvantages from "@/components/Content/components/Advantages/OurAdvantages";
 
 export default {
   name: "Content",
   components: {
+    OurAdvantages,
     Achievements,
     YourCase,
     Benefit,

@@ -23,6 +23,7 @@ export default {
 .image3x {
   position: absolute;
   left: 0;
+  opacity: 0.8;
   bottom: 200px;
   z-index: -100;
   -webkit-transform: scaleX(-1);
