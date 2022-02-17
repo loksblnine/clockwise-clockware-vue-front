@@ -2,7 +2,7 @@
   <div>
     <div class="Carousel">
       <div v-for="item in renderElems(currentIndex)" :key="items.indexOf(item)">
-        <div class="Rectangle">
+        <div class="Rectangle" style="touch-action: pan-x">
           <h3>{{ item.header }}</h3>
           <p>{{ item.text }}</p>
         </div>
@@ -52,8 +52,8 @@
         </svg>
       </div>
       <div v-for="n in items.length" :key="n" class="Dots">
-        <span v-if="currentIndex!==n-1" class="dot"></span>
-        <span v-if="currentIndex===n-1" class="activeDot"></span>
+        <span v-if="currentIndex!==n-1" class="dot" v-on:click="move(n)"/>
+        <span v-else class="activeDot"/>
       </div>
     </div>
   </div>
@@ -117,6 +117,23 @@ export default {
       const shifted = this.items.shift()
       this.items.push(shifted)
       this.items.reverse()
+    },
+    logger(data) {
+      console.log(data)
+    },
+    move(step) {
+      if (this.currentIndex < step - 1) {
+        for (let i = Math.min(this.currentIndex, step - 1); i < Math.max(this.currentIndex, step - 1); i++) {
+          this.moveRight()
+        }
+        return 0
+      }
+      if (this.currentIndex > step - 1) {
+        for (let i = Math.max(this.currentIndex, step - 1); i > Math.min(this.currentIndex, step - 1); i--) {
+          this.moveLeft()
+        }
+        return 0
+      }
     }
   }
 }

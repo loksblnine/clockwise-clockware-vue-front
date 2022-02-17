@@ -15,6 +15,7 @@ export default {
 
 <style scoped>
 .Button {
+  border: none;
   height: 80px;
   min-width: 560px;
   text-align: center;

@@ -23,8 +23,8 @@
         </svg>
       </div>
       <div v-for="n in items.length" :key="n" class="Dots">
-        <span v-if="currentIndex!==n-1" class="dot"></span>
-        <span v-if="currentIndex===n-1" class="activeDot"></span>
+        <span v-if="currentIndex!==n-1" class="dot" v-on:click="move(n)"/>
+        <span v-else class="activeDot"/>
       </div>
       <div class="Right" v-on:click="moveRight">
         <svg height="87" viewBox="0 0 84 87" width="84" xmlns="http://www.w3.org/2000/svg">
@@ -149,6 +149,23 @@ export default {
       const shifted = this.items.shift()
       this.items.push(shifted)
       this.items.reverse()
+    },
+    logger(data) {
+      console.log(data)
+    },
+    move(step) {
+      if (this.currentIndex < step - 1) {
+        for (let i = Math.min(this.currentIndex, step - 1); i < Math.max(this.currentIndex, step - 1); i++) {
+          this.moveRight()
+        }
+        return 0
+      }
+      if (this.currentIndex > step - 1) {
+        for (let i = Math.max(this.currentIndex, step - 1); i > Math.min(this.currentIndex, step - 1); i--) {
+          this.moveLeft()
+        }
+        return 0
+      }
     }
   }
 }
