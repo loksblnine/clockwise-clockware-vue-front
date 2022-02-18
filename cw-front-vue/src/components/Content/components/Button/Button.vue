@@ -1,5 +1,5 @@
 <template>
-  <button class="Button">
+  <button class="Button" v-on:click="logger(msg)">
     <span>{{ msg }}</span>
   </button>
 </template>
@@ -9,6 +9,11 @@ export default {
   name: "Button",
   props: {
     msg: String
+  },
+  methods: {
+    logger(msg){
+      console.log(msg)
+    }
   }
 }
 </script>
@@ -30,6 +35,9 @@ export default {
   background-color: rgba(8, 61, 119, 1);
   box-shadow: 0 5px 2px -2px rgba(65, 111, 162, 0.5);
   color: white;
+}
+.Button:hover{
+  cursor: pointer;
 }
 .Button > span { margin: 55px}
 

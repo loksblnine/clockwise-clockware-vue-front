@@ -11,20 +11,32 @@ export default {
 </script>
 
 <style scoped>
-@media screen and (min-width: 300px) {
+
+.Im {
+  margin-right: 310px;
+  margin-top: 40px;
+  width: 200px;
+  height: 20px;
+  font-family: OpenSans, serif;
+  font-size: 13px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
   .Im {
-    margin: 42px 0 42px 0;
-    width: 200px;
-    height: 20px;
-    font-family: OpenSans, serif;
-    font-size: 13px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: 0.72px;
-    text-align: center;
-    color: #fff;
+    margin-right: 205px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Im {
+    margin-right: 25px;
   }
 }
 
@@ -33,16 +45,9 @@ export default {
     margin: 34px 0 42px 0;
     width: 150px;
     height: 20px;
-    font-family: OpenSans, serif;
     font-size: 8px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.72px;
-    text-align: center;
-    color: #fff;
-
   }
 }
 
@@ -51,15 +56,9 @@ export default {
     margin: 30px 0 42px 0;
     width: 75px;
     height: 20px;
-    font-family: OpenSans, serif;
     font-size: 6px;
     font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.12px;
-    text-align: center;
-    color: #fff;
   }
 }
 </style>

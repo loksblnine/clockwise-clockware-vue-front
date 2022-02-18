@@ -1,12 +1,13 @@
 <template>
   <div class="Advantages">
     <h1>OUR ADVANTAGES</h1>
-    <div v-for="item in items" :key="item.header">
-      <div class="AdvantageContainer">
+    <div v-for="(item, index) in items" :key="item.header">
+      <div class="AdvantageContainer" v-on:click="myFunction(index)">
         <div class="RedCircle"/>
         <h3>{{ item.header }}</h3>
       </div>
-      <div><p>{{ item.text }}</p>
+      <div class="TextField" :id="index">
+        <p>{{ item.text }}</p>
       </div>
     </div>
   </div>
@@ -44,13 +45,22 @@ export default {
         },
       ]
     }
+  },
+  methods: {
+    myFunction(n) {
+      if (document.getElementById(`${n}`).style.display === "flex") {
+        document.getElementById(`${n}`).style.display = "none";
+      } else {
+        document.getElementById(`${n}`).style.display = "flex";
+      }
+    }
   }
 }
 </script>
 
 <style scoped>
 .Advantages {
-  margin-left: 276px;
+  margin-left: 226px;
 }
 
 h1 {
@@ -153,9 +163,30 @@ p {
   }
 
   .RedCircle {
-    margin: 0;
-    width: 24px;
-    height: 20px;
+    margin-right: 20px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    background: white;
+    border-radius: 0;
+    width: 7px;
+    height: 7px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  .AdvantageContainer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .AdvantageContainer .TextField {
+    display: flex;
+  }
+
+  .TextField {
+    display: none;
   }
 }
 </style>

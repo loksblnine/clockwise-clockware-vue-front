@@ -2,7 +2,7 @@
   <div class="Content">
     <decorativeRoutesThingTop/>
     <decorativeRoutesThingMiddle/>
-    <ArrowContentBottom/>
+<!--    <ArrowContentBottom/>-->
     <Management/>
     <Issue/>
     <Benefit/>
@@ -16,7 +16,7 @@
 import decorativeRoutesThingTop from "@/components/Content/components/decorativeRoutesThingTop";
 import decorativeRoutesThingMiddle from "@/components/Content/components/decorativeRoutesThingMiddle";
 import Management from "@/components/Content/components/Managment/Managment";
-import ArrowContentBottom from "@/components/Content/components/arrowContentBottom";
+// import ArrowContentBottom from "@/components/Content/components/arrowContentBottom";
 import Issue from "./components/Issues/Issue";
 import Benefit from "@/components/Content/components/Benefit/Benefit";
 import YourCase from "@/components/Content/components/YourCase/YourCase";
@@ -31,7 +31,7 @@ export default {
     YourCase,
     Benefit,
     Issue,
-    ArrowContentBottom,
+    // ArrowContentBottom,
     Management,
     decorativeRoutesThingTop,
     decorativeRoutesThingMiddle,

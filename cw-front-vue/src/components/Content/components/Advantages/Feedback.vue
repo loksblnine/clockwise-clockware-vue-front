@@ -44,7 +44,7 @@ export default {
   padding-top: 96px;
   padding-left: 40px;
   box-shadow: -10px 5px 15px #efefef;
-
+  background-image: linear-gradient(to right, #ffffff , #efefef);
 }
 
 .Photo {
@@ -97,7 +97,7 @@ p {
 @media screen and (max-width: 1025px) {
   .Feedback {
     margin: 0 0 0 78px;
-    padding: 60px 60px;
+    padding: 60px 0px;
     box-shadow: 0 0 27px 9px #efefef;
     width: 80%;
   }

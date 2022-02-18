@@ -12,7 +12,7 @@
 import Button from "@/components/Content/components/Button/Button";
 
 export default {
-  name: "Managment",
+  name: "Management",
   components: {Button}
 }
 </script>
@@ -22,7 +22,6 @@ export default {
   display: table;
   position: relative;
   margin-left: 250px;
-  z-index: -50;
 }
 
 .Management > h3 {

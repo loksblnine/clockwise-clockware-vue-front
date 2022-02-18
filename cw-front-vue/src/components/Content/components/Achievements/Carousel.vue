@@ -60,7 +60,7 @@
         </div>
         <div class="TextField">
           <h3>{{ item.header }}</h3>
-          <pre>{{ item.text }}</pre>
+          <p>{{ item.text }}</p>
         </div>
       </article>
     </div>
@@ -98,7 +98,7 @@ export default {
         {
           photo: image_2,
           photoDescription: "2double truck day load capacity increase ",
-          header: "2ERP system for construction materials factory",
+          header: "2ERP system for construction factory",
           text: "2Custom logistics software includes several modules that enabled to fully digitalize a factory" +
               "– Order and stock management optimization\n" +
               "– Automatic invoicing and accounting\n" +
@@ -111,7 +111,7 @@ export default {
         {
           photo: image_3,
           photoDescription: "3double truck day load capacity increase ",
-          header: "3ERP system for construction materials factory",
+          header: "3ERP system for materials factory",
           text: "3Custom logistics software includes several modules that enabled to fully digitalize a factory" +
               "– Order and stock management optimization\n" +
               "– Automatic invoicing and accounting\n" +
@@ -220,9 +220,9 @@ export default {
 .Carousel > article {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  margin-left: 140px;
 }
 
 .ImageField {
@@ -248,15 +248,13 @@ export default {
 }
 
 .TextField {
- margin-left: 80px
+  margin-left: 80px
 }
 
 .TextField > h3 {
   text-align: left;
-  white-space: pre-wrap;
   height: 60px;
-  width: auto;
-  margin: 0 0 10px;
+  width: 345px;
   font-family: Catamaran-Black;
   font-size: 25px;
   font-weight: 900;
@@ -267,7 +265,7 @@ export default {
   color: #1e1e1e;
 }
 
-.TextField > pre {
+.TextField > p {
   white-space: pre-wrap;
   text-align: left;
   width: 345px;
@@ -286,15 +284,24 @@ export default {
 
 
 @media screen and (max-width: 1025px) {
+  .Carousel {
+    margin-left: 0;
+  }
+
   .Buttons {
     margin-top: 20px;
-    margin-left: 112px;
   }
+
   .TextField {
     margin-left: 0px
   }
-  .Carousel {
-    margin-left: 112px;
+
+  .Image {
+    transform: scale(0.8);
+  }
+
+  .ImageField {
+    width: 345px;
   }
 
   .ImageHeader {
@@ -306,17 +313,18 @@ export default {
 
   .TextField > h1 {
     text-align: left;
-    width: 345px;
+    width: 325px;
     height: 60px;
     font-size: 25px;
     margin-right: 30px;
   }
 
-  .TextField > pre {
-    width: auto;
+  .TextField > p {
+    width: 325px;
     height: 276px;
     font-size: 17px;
   }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -326,44 +334,40 @@ export default {
     width: 10px;
   }
 
-  .TextField {
-    margin-left: 0
-  }
   .activeDot {
     height: 10px;
     margin-left: 15px;
     width: 10px;
   }
 
-  .Carousel {
+  .Carousel > article {
+    margin-top: 0;
     margin-left: 12px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .Buttons {
-    margin-top: 10px;
+    padding-top: 300px;
     margin-left: 12px;
   }
 
   .Image {
     transform: scale(0.6);
-    margin-top: -150px;
-
   }
 
   .ImageField {
     max-width: 300px;
+    margin-top: -50px;
   }
 
   .ImageHeader {
     font-size: 13px;
-    margin-top: -100px;
   }
 
   .TextField {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-left: 0;
+    margin-top: -400px
   }
 
   .TextField > h3 {
@@ -371,7 +375,7 @@ export default {
     font-size: 17px;
   }
 
-  .TextField > pre {
+  .TextField > p {
     margin-top: -20px;
     width: auto;
     height: 276px;

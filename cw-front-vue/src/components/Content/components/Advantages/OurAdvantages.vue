@@ -23,6 +23,7 @@ export default {
 .OurAdvantages {
   display: flex;
   flex-direction: row;
+  justify-content: end;
 }
 
 @media screen and (max-width: 1025px) {
