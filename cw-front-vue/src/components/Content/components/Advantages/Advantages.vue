@@ -89,6 +89,11 @@ h1 {
   display: flex;
   height: auto;
   width: auto;
+  pointer-events: none;
+}
+
+.AdvantageContainer .TextField {
+  display: flex;
 }
 
 h3 {
@@ -179,6 +184,7 @@ p {
   .AdvantageContainer {
     display: flex;
     flex-direction: row-reverse;
+    pointer-events: all;
   }
 
   .AdvantageContainer .TextField {

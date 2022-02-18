@@ -35,6 +35,8 @@ export default {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 100;
+
 }
 
 .menu > * {
@@ -118,7 +120,7 @@ export default {
     margin-top: 130px;
     left: 0;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     justify-content: center;
   }
 

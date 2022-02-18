@@ -28,18 +28,26 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 3px;
+  margin: 0;
+  overflow-x: hidden;
 }
+
+body {
+  margin: 0;
+}
+
 @font-face {
   font-family: "Catamaran";
   src: local("Catamaran"),
   url(./fonts/catamaran.bold.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "OpenSans";
   src: local("OpenSans"),
   url(./fonts/OpenSans-Regular.ttf) format("truetype");
 }
+
 @font-face {
   font-family: "Catamaran-Black";
   src: local("OpenSans"),

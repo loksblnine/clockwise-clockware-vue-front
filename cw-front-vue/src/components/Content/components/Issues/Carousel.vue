@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="Carousel">
+    <div id="Carousel" class="Carousel">
       <div v-for="item in renderElems(currentIndex)" :key="items.indexOf(item)">
         <div class="Rectangle" style="touch-action: pan-x">
           <h3>{{ item.header }}</h3>
