@@ -3,7 +3,7 @@
     <h1>OUR ADVANTAGES</h1>
     <div v-for="(item, index) in items" :key="item.header">
       <div class="AdvantageContainer" v-on:click="myFunction(index)">
-        <div class="RedCircle"/>
+        <div v-bind:id="'circle-'+index" class="RedCircle"/>
         <h3>{{ item.header }}</h3>
       </div>
       <div :id="index" class="TextField">
@@ -50,8 +50,10 @@ export default {
     myFunction(n) {
       if (document.getElementById(`${n}`).style.display === "flex") {
         document.getElementById(`${n}`).style.display = "none";
+        document.getElementById(`circle-${n}`).style.transform = "rotate(45deg)";
       } else {
         document.getElementById(`${n}`).style.display = "flex";
+        document.getElementById(`circle-${n}`).style.transform = "rotate(-135deg)";
       }
     }
   }
@@ -184,14 +186,15 @@ p {
 
   .RedCircle {
     margin-right: 20px;
+    margin-top: 5px;
     border: solid black;
-    border-width: 0 3px 3px 0;
+    border-width: 0 2px 2px 0;
     display: inline-block;
     padding: 3px;
     background: white;
-    border-radius: 0;
-    width: 7px;
-    height: 7px;
+    border-radius: 15%;
+    width: 3px;
+    height: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
   }
