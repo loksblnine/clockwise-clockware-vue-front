@@ -37,7 +37,18 @@ export default {
 
 @media screen and (max-width: 1025px) {
   .Achievements > h1 {
-    margin: 0 50px;
+    margin-left: 165px;
+    width: 512px;
+    height: 75px;
+    font-family: Catamaran-Black;
+    font-size: 25px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.63px;
+    text-align: right;
+    color: #1e1e1e;
   }
 }
 

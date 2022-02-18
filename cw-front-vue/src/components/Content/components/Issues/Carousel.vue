@@ -2,7 +2,7 @@
   <div>
     <div id="Carousel" class="Carousel">
       <div v-for="item in renderElems(currentIndex)" :key="items.indexOf(item)">
-        <div class="Rectangle" style="touch-action: pan-x">
+        <div class="Rectangle">
           <h3>{{ item.header }}</h3>
           <p>{{ item.text }}</p>
         </div>

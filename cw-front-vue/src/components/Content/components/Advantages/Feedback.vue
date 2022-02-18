@@ -44,7 +44,7 @@ export default {
   padding-top: 96px;
   padding-left: 40px;
   box-shadow: -10px 5px 15px #efefef;
-  background-image: linear-gradient(to right, #ffffff , #efefef);
+  background-image: linear-gradient(to right, #ffffff, #efefef);
 }
 
 .Photo {
@@ -96,21 +96,30 @@ p {
 
 @media screen and (max-width: 1025px) {
   .Feedback {
-    margin: 0 0 0 78px;
-    padding: 60px 0px;
+    margin: 60px 0 0 78px;
+    padding: 90px 0;
     box-shadow: 0 0 27px 9px #efefef;
     width: 80%;
+    background-image: linear-gradient(173deg, #fff, #f8f8f8 100%);
   }
 
   p {
-    width: 80%;
+    margin-left: 108px;
     white-space: pre-wrap;
-    margin: 0 0 10px 30px;
     font-size: 17px;
+    width: 415px;
+    height: auto;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.43px;
+    color: #1e1e1e;
   }
 
   .FeedbackContainer {
     margin-top: -20px;
+    margin-left: 108px;
   }
 }
 

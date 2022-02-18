@@ -57,30 +57,32 @@ export default {
 
 @media screen and (max-width: 1025px) {
   .Management {
-    margin-left: 150px;
+    margin-left: 130px;
   }
 
   .Management > h3 {
-    margin-bottom: 0;
-    width: 275px;
+    margin-bottom: 68px;
+    width: 452px;
     height: 80px;
-    font-size: 21px;
+    font-size: 35px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1;
-    letter-spacing: -0.38px;
+    letter-spacing: -0.88px;
   }
 
   .Management > p {
     margin-top: 0;
-    width: 350px;
+    width: 452px;
     height: auto;
-    font-size: 21px;
+    font-size: 17px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
+    letter-spacing: -0.43px;
+
   }
 }
 
@@ -98,7 +100,7 @@ export default {
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
-    letter-spacing: 0px;
+    letter-spacing: 0;
   }
 
   .Management > p {

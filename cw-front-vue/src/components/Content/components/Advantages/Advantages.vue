@@ -6,7 +6,7 @@
         <div class="RedCircle"/>
         <h3>{{ item.header }}</h3>
       </div>
-      <div class="TextField" :id="index">
+      <div :id="index" class="TextField">
         <p>{{ item.text }}</p>
       </div>
     </div>
@@ -131,11 +131,26 @@ p {
 
 @media screen and (max-width: 1025px) {
   .Advantages {
-    margin: 0 0 0 128px;
+    margin: 0 0 0 79px;
+  }
+
+  .Advantages > h1 {
+    width: 505px;
+    height: 44px;
+    font-family: Catamaran-Black;
+    font-size: 25px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.63px;
+    color: #1e1e1e;
   }
 
   p {
-    font-size: 17px;
+    margin-top: -5px;
+    font-size: 15px;
+    letter-spacing: -0.38px;
   }
 
   h3 {

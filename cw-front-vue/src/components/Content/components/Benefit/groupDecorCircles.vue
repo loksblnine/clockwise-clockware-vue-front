@@ -215,6 +215,17 @@ export default {
 }
 
 @media screen and (max-width: 1025px) {
+  .Header {
+    width: 500px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: -0.63px;
+  }
+
   .image1x {
     margin: 0;
   }

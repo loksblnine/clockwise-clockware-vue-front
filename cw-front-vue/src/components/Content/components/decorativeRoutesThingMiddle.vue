@@ -40,7 +40,7 @@ export default {
   }
 
   .image2x {
-    display: flex;
+    display: block;
     position: absolute;
     right: 0;
     top: 280px;

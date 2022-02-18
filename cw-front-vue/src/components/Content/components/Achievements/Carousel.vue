@@ -284,30 +284,33 @@ export default {
 
 
 @media screen and (max-width: 1025px) {
-  .Carousel {
+  .Carousel > article {
     margin-left: 0;
   }
 
   .Buttons {
     margin-top: 20px;
+    margin-left: 52px;
+    justify-content: left;
   }
 
   .TextField {
-    margin-left: 0px
+    margin-left: 24px
   }
 
   .Image {
-    transform: scale(0.8);
+    max-width: 345px;
+    max-height: 345px;
   }
 
-  .ImageField {
-    width: 345px;
+  .Image > img {
+    height: 100%;
+    width: 100%;
   }
 
   .ImageHeader {
     width: 345px;
     height: 20px;
-    margin: 1px 0 50px 16px;
     font-size: 15px;
   }
 

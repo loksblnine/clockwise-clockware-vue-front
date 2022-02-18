@@ -1,6 +1,6 @@
 <template>
   <div class="Issue">
-    <h3>Have you experienced any of these issues?</h3>
+    <h3>HAVE YOU EXPERIENCED WITH ANY OF THIS ISSUES?</h3>
     <Carousel/>
     <div class="TextField">
       <p>
@@ -80,25 +80,26 @@ export default {
 
 @media screen and (max-width: 1025px) {
   .Issue {
-    margin-left: 100px;
-    margin-top: 100px;
+    margin-left: 80px;
   }
 
   .Issue > div {
-    margin-left: -100px;
+    margin-left: -150px;
   }
 
   .Issue > h3 {
-    margin-bottom: 0;
-    margin-left: 90px;
-    width: 450px;
-    height: 80px;
-    font-size: 21px;
-    font-weight: normal;
+    margin: 139px 91px 65px 0;
+    width: 620px;
+    height: 25px;
+    font-family: Catamaran-Black;
+    font-size: 25px;
+    font-weight: 900;
     font-stretch: normal;
     font-style: normal;
-    line-height: normal;
-    letter-spacing: -0.38px;
+    line-height: 1;
+    letter-spacing: -0.63px;
+    text-align: left;
+    color: #1e1e1e;
   }
 
   .TextField {
@@ -135,7 +136,7 @@ export default {
   }
 
   .Issue > div {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   .Issue > h3 {
