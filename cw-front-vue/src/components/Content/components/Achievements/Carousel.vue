@@ -48,7 +48,7 @@
         </svg>
       </div>
     </div>
-    <div class="Carousel">
+    <div id="#Carousel" class="Carousel">
       <article v-for="item in renderElems(currentIndex)" :key="items.indexOf(item)">
         <div class="ImageField">
           <div class="Image">
@@ -123,6 +123,23 @@ export default {
         }
       ]
     }
+  },
+  mounted() {
+    var src = document.getElementById("#Carousel");
+    var clientX
+    src.addEventListener('touchstart', (e) => {
+      clientX = e.touches[0].clientX;
+    }, false);
+    src.addEventListener('touchend', (e) => {
+      var deltaX
+      deltaX = e.changedTouches[0].clientX - clientX;
+      if (deltaX < 0 && Math.abs(deltaX) > 100) {
+        this.moveRight()
+      }
+      if (deltaX > 0 && Math.abs(deltaX) > 100) {
+        this.moveLeft()
+      }
+    }, false);
   },
   methods: {
     renderElems() {

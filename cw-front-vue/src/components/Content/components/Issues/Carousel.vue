@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div id="Carousel" class="Carousel">
+    <div id="#Carousel" class="Carousel">
       <div v-for="item in renderElems(currentIndex)" :key="items.indexOf(item)">
-        <div class="Rectangle">
+        <div class="Rectangle" id="#Rectangle">
           <h3>{{ item.header }}</h3>
           <p>{{ item.text }}</p>
         </div>
@@ -135,6 +135,25 @@ export default {
         return 0
       }
     }
+  },
+  mounted() {
+    var src = document.getElementById("#Rectangle");
+    console.log(src)
+    var clientX
+    src.addEventListener('touchstart', (e) => {
+      clientX = e.touches[0].clientX;
+    }, false);
+
+    src.addEventListener('touchend', (e) => {
+      var deltaX
+      deltaX = e.changedTouches[0].clientX - clientX;
+      if (deltaX < 0 && Math.abs(deltaX) > 100) {
+        this.moveRight()
+      }
+      if (deltaX > 0 && Math.abs(deltaX) > 100) {
+        this.moveLeft()
+      }
+    }, false);
   }
 }
 </script>
