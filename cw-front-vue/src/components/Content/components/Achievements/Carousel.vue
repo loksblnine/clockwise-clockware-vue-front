@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="#Carousel2">
     <div class="Buttons">
       <div class="Left" v-on:click="moveLeft">
         <svg height="87" viewBox="0 0 84 87" width="84" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +48,7 @@
         </svg>
       </div>
     </div>
-    <div id="#Carousel" class="Carousel">
+    <div class="Carousel">
       <article v-for="item in renderElems(currentIndex)" :key="items.indexOf(item)">
         <div class="ImageField">
           <div class="Image">
@@ -125,7 +125,7 @@ export default {
     }
   },
   mounted() {
-    var src = document.getElementById("#Carousel");
+    var src = document.getElementById("#Carousel2");
     var clientX
     src.addEventListener('touchstart', (e) => {
       clientX = e.touches[0].clientX;
@@ -140,6 +140,7 @@ export default {
         this.moveLeft()
       }
     }, false);
+    console.log(src)
   },
   methods: {
     renderElems() {
@@ -371,7 +372,7 @@ export default {
   }
 
   .Buttons {
-    padding-top: 300px;
+    padding-top: 250px;
     margin-left: 12px;
   }
 
@@ -381,7 +382,7 @@ export default {
 
   .ImageField {
     max-width: 300px;
-    margin-top: -50px;
+    margin-top: 50px;
   }
 
   .ImageHeader {
@@ -401,7 +402,7 @@ export default {
   .TextField > p {
     margin-top: -20px;
     width: auto;
-    height: 276px;
+    height: 226px;
     font-size: 14px;
   }
 }

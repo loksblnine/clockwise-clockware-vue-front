@@ -1,7 +1,7 @@
 <template>
   <div class="Achievements">
-    <h1>WHAT OUR PARTNERS HAVE ACHIEVED <br>
-      WITH CUSTOM TRANSPORT MANAGEMENT<br>
+    <h1>WHAT OUR PARTNERS HAVE ACHIEVED
+      WITH CUSTOM TRANSPORT MANAGEMENT
       SOFTWARE
     </h1>
     <Carousel/>
@@ -54,9 +54,11 @@ export default {
 
 @media screen and (max-width: 500px) {
   .Achievements > h1 {
-    margin-right: 20px;
-    font-size: 20px;
-    width: auto;
+    position: relative;
+    font-size: 25px;
+    margin: 0 0 100px -15px;
+    width: 100%;
+    white-space: pre-wrap;
   }
 }
 </style>

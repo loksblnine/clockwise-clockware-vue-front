@@ -138,7 +138,6 @@ export default {
   },
   mounted() {
     var src = document.getElementById("#Carousel");
-    console.log(src)
     var clientX
     src.addEventListener('touchstart', (e) => {
       clientX = e.touches[0].clientX;
