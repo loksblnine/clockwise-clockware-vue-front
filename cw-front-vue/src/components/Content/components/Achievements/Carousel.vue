@@ -373,7 +373,7 @@ export default {
 
   .Buttons {
     padding-top: 250px;
-    margin-left: 12px;
+    margin-left: 0.5vw;
   }
 
   .Image {
@@ -382,7 +382,7 @@ export default {
 
   .ImageField {
     max-width: 300px;
-    margin-top: 50px;
+    margin-top: 0;
   }
 
   .ImageHeader {
@@ -390,12 +390,14 @@ export default {
   }
 
   .TextField {
-    margin-left: 0;
-    margin-top: -400px
+    width: 100%;
+    white-space: pre-wrap;
+    margin: -400px 0 100px -5px;
   }
 
   .TextField > h3 {
     text-align: center;
+    width: 100%;
     font-size: 17px;
   }
 

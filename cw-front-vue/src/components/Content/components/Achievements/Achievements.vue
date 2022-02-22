@@ -54,9 +54,8 @@ export default {
 
 @media screen and (max-width: 500px) {
   .Achievements > h1 {
-    position: relative;
     font-size: 25px;
-    margin: 0 0 100px -15px;
+    margin: 0 0 100px -5px;
     width: 100%;
     white-space: pre-wrap;
   }

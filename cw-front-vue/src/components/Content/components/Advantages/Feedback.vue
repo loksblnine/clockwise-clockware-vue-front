@@ -98,9 +98,9 @@ p {
   .Feedback {
     margin: 60px 0 0 78px;
     padding: 90px 0;
-    box-shadow: 0 0 27px 9px #efefef;
     width: 80%;
-    background-image: linear-gradient(173deg, #fff, #f8f8f8 100%);
+    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(151deg, #fff, #efefef 100%);
   }
 
   p {
@@ -125,19 +125,15 @@ p {
 
 @media screen and (max-width: 500px) {
   .Feedback {
-    margin-top: 40px;
-    margin-left: 20px;
-    padding: 20px;
+    margin: 50px 10px;
+    padding: 20px 0;
     box-shadow: 0 0 27px 9px #efefef;
-    width: 260px
-  }
-
-  .Feedback > div {
-    width: 250px;
+    width: auto;
+    background-image: linear-gradient(to bottom, #fff, #f8f8f8 100%);
   }
 
   .FeedbackContainer {
-    margin-left: -100px;
+    margin-left: -150px;
   }
 
   p {
