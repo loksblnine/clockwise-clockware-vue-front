@@ -2,7 +2,7 @@
   <div>
     <div id="#Carousel" class="Carousel">
       <div v-for="item in renderElems(currentIndex)" :key="items.indexOf(item)">
-        <div class="Rectangle" id="#Rectangle">
+        <div class="Rectangle">
           <h3>{{ item.header }}</h3>
           <p>{{ item.text }}</p>
         </div>
@@ -137,7 +137,7 @@ export default {
     }
   },
   mounted() {
-    var src = document.getElementById("#Rectangle");
+    var src = document.getElementById("#Carousel");
     console.log(src)
     var clientX
     src.addEventListener('touchstart', (e) => {
@@ -160,6 +160,7 @@ export default {
 
 <style scoped>
 .dot {
+  cursor: pointer;
   height: 15px;
   margin-left: 25px;
   width: 15px;
@@ -178,10 +179,12 @@ export default {
 }
 
 .Left {
+  cursor: pointer;
   opacity: 0.5;
 }
 
 .Right {
+  cursor: pointer;
   opacity: 0.5;
 }
 
@@ -300,7 +303,7 @@ export default {
   }
 
   .Carousel {
-    margin-left: 12px;
+    margin: 0;
   }
 
   .Buttons {
@@ -311,28 +314,27 @@ export default {
 
   .Rectangle {
     position: relative;
-    margin-top: 20px;
-    width: 240px;
+    margin: 20px 0 0;
+    padding-right: 20px;
+    width: 100%;
     height: auto;
     max-height: 290px;
-    padding: 67px 37px 118px 38px;
   }
 
 
   .Rectangle > h3 {
-    width: 245px;
+    margin: 0 60px 0 0;
     height: 50px;
+    width: 90%;
     font-size: 17px;
-    margin: 0 0 22px;
     line-height: 1.19;
     letter-spacing: -0.53px;
   }
 
   .Rectangle > p {
+    width: auto;
+    margin: 0 60px 0 0;
     font-size: 14px;
-    width: 245px;
-    height: 115px;
-    margin: 22px 0 0;
     letter-spacing: -0.43px;
   }
 }

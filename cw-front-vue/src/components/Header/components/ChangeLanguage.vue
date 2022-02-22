@@ -88,7 +88,6 @@ export default {
 
 @media (max-width: 700px) {
   .form_toggle {
-    width: 100%;
     background-color: white;
     border-bottom: 1px solid #f3f3f3;
   }
@@ -115,7 +114,6 @@ export default {
 
 @media (max-width: 300px) {
   .form_toggle {
-    width: 100%;
     background-color: white;
     border-bottom: 1px solid #f3f3f3;
   }

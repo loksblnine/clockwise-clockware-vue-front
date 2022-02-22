@@ -128,7 +128,6 @@ export default {
   margin-left: 157px;
   display: flex;
   flex-wrap: wrap;
-  z-index: -50;
   background: white;
 }
 
@@ -158,6 +157,7 @@ export default {
 }
 
 .TextField {
+  z-index: 1;
   position: absolute;
   left: 125px;
   top: -20px;

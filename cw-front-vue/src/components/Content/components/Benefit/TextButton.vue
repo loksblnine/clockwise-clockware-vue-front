@@ -20,6 +20,7 @@ export default {
 
 <style scoped>
 .TextButton {
+  position: relative;
   margin-left: 20px;
 }
 

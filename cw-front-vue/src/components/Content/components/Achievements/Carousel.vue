@@ -194,6 +194,7 @@ export default {
 }
 
 .dot {
+  cursor: pointer;
   height: 15px;
   margin-left: 25px;
   width: 15px;
@@ -214,11 +215,13 @@ export default {
 .Left {
   margin-right: 25px;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .Right {
   margin-left: 50px;
   opacity: 0.5;
+  cursor: pointer;
 }
 
 .Left:hover {

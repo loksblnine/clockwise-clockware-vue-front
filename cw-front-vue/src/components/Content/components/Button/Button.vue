@@ -20,6 +20,7 @@ export default {
 
 <style scoped>
 .Button {
+  opacity: 0.5;
   border: none;
   height: 80px;
   min-width: 560px;
@@ -38,6 +39,7 @@ export default {
 }
 .Button:hover{
   cursor: pointer;
+  opacity: 1;
 }
 .Button > span { margin: 55px}
 

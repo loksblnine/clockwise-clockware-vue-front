@@ -76,9 +76,10 @@ export default {
 .menu-button,
 .menu-button::before,
 .menu-button::after {
+  margin-right: 50px;
   display: block;
   background-color: #1e1e1e;
-  position: absolute;
+  position: relative;
   height: 4px;
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
@@ -92,11 +93,11 @@ export default {
 
 .menu-button::after {
   content: '';
-  margin-top: 8px;
+  margin-top: 12px;
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::before {
-  margin-top: 0;
+  margin: 0;
   transform: rotate(405deg);
 }
 
@@ -105,7 +106,7 @@ export default {
 }
 
 #menu-toggle:checked + .menu-button-container .menu-button::after {
-  margin-top: 0;
+  margin-top: -3px;
   transform: rotate(-405deg);
 }
 
@@ -149,11 +150,10 @@ export default {
   .menu > p {
     display: flex;
     justify-content: left;
-    width: 100%;
     background-color: white;
     color: #1e1e1e;
     margin: 0;
-    padding: 0.5em;
+    padding: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     border-bottom: 1px solid #f3f3f3;
   }
@@ -166,7 +166,6 @@ export default {
 @media (max-width: 300px) {
   .menu > * {
     font-size: 15px;
-    width: 80%;
   }
 }
 
